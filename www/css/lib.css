@@ -1,0 +1,196 @@
+﻿/*-----------------[初始化]--------------*/
+/**,*:before,*:after {*/
+    /*-webkit-box-sizing: border-box;*/
+    /*-moz-box-sizing: border-box;*/
+    /*-o-box-sizing: border-box;*/
+    /*box-sizing: border-box;*/
+/*}*/
+body{color: #000;font-size: 14px;line-height: 1.5;font-family: Arial,"Microsoft Yahei";min-width: 1080px;}
+img{max-width: 100%;}
+a,img,button,input,textarea{-webkit-tap-highlight-color:rgba(255,255,255,0);}
+input,input:focus,textarea,select{color: #333;font-family: Arial,"Microsoft Yahei";outline: 0;border-radius: 0;border: none;}
+input[type='submit'],input[type='reset'],input[type='button'],select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+input[type='submit'],input[type='reset'],input[type='button']{cursor: pointer;}
+::-webkit-input-placeholder {color: #999;}
+::-moz-placeholder {color: #999; }
+::-ms-input-placeholder {color: #999;}
+a{ color: #000;  }
+a:hover img{
+    opacity: .8;
+    filter:alpha(opacity=80);
+}
+.ani,a{
+    transition: .5s;
+    -ms-transition: .5s;
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
+    -o-transition: .5s;
+}
+/*布局*/
+.wp {margin: 0 auto;width: 1000px;}
+
+
+/*******************************
+  -------[=头部]-------
+********************************/
+#hd{
+    height: 100px;
+    overflow: hidden;
+}
+#hd .logo{
+    float: left;
+}
+#hd .logo img{
+    display: inline-block;
+    height: 29px;
+    padding: 35px 0;
+}
+#hd .right{
+    float: right;
+    overflow: hidden;
+    line-height: 1em;
+}
+#hd .language{
+    padding:15px 0 0;
+    line-height: 17px;
+    vertical-align: middle;
+    text-align: right;
+}
+#hd .language a{
+    display: inline-block;
+    padding-left: 12px;
+    font-size: 12px;
+    color: #7d7d7d;
+}
+#hd .language img{
+    display: inline-block;
+    width: 25px;
+    height: 17px;
+    vertical-align: top;
+    margin-right: 6px;
+}
+.nav{
+    display: inline-block;
+    overflow: hidden;
+    padding-top: 20px;
+}
+.nav li{
+    float: left;
+    padding:0 12px;
+    position: relative;
+}
+.nav li:after{
+    content:"";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 2px;
+    height: 14px;
+    background-color: #e5e5e5;
+}
+.nav li:first-child:after{
+    display: none;
+}
+.nav li a{
+    display: inline-block;
+    padding:0 20px 30px;
+    font-size: 14px;
+    color: #7d7d7d;
+}
+.nav li.on a{
+    border-bottom: 3px solid #e62129;
+}
+.nav a:hover,#hd .language a{
+    opacity: .6;
+    filter:alpha(opacity=60);
+}
+.box-search {  float: right;  padding-top: 12px;}
+.box-search .btn-search {float: left;display: inline-block;width: 24px;height: 30px;
+    background: url(../images/ico-search.png) center center no-repeat;
+    vertical-align: middle;}
+.box-search .inp-search {float: left;display: inline-block;width: 0;height: 30px;border-radius: 3px;}
+.box-search .inp-search.show {padding: 0 10px;border: 1px solid #eee;}
+
+/*******************************
+  -------[=底部]-------
+********************************/
+#fd{
+    height: 66px;
+    line-height: 66px;
+    background-color: #e5e5e5;
+    font-size: 14px;
+    color: #434343;
+    text-align: center;
+}
+
+/*******************************
+    -------[=正文]-------
+********************************/
+#bd{
+    overflow: hidden;
+}
+.siderbar{
+    float: left;
+}
+.g-content{
+    margin-left: 256px;
+}
+.inner-bd{
+    padding-top: 40px;
+    border-top: 1px solid #a0a0a0;
+    background-color: #eeeeee;
+    padding-bottom: 60px;
+}
+.inner-bd .g-content{
+    background-color: #fff;
+    margin-left: 200px;
+    padding-bottom: 60px;
+}
+.g-tit{
+    font-size: 18px;
+    line-height: 1em;
+    padding-bottom: 20px;
+    position: relative;
+}
+.g-tit:after{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    content:"";
+    display: block;
+    width: 42px;
+    height: 3px;
+    background-color: #e62129;
+}
+.cur{
+    padding:28px 18px 0;
+    text-align: right;
+    line-height: 1em;
+    font-size: 12px;
+}
+.cur a{
+    color: #555555;
+
+}
+.cur a:hover{
+    color: #007fb4;
+}
+.g-page{
+    padding:40px 0 0;
+    text-align: center;
+}
+.g-page a{
+    color: #777777;
+    display: inline-block;
+    margin-right: 4px;
+}
+.g-page a:hover,.g-page a.on{
+    color: #000;
+    text-decoration: underline;
+}
+
